@@ -34,20 +34,20 @@ func NewProxy(systemAURL, systemBURL string) (*httputil.ReverseProxy, error) {
 	}
 
 	director := func(req *http.Request) {
-		originalPath := req.URL.Path
-		var proxyURL url.URL
-		if strings.HasPrefix(originalPath, systemARoutePrefix) {
-			proxyURL = *urlA
-		} else if strings.HasPrefix(originalPath, systemBRoutePrefix) {
-			proxyURL = *urlB
+		originalURL := req.URL
+
+		if strings.HasPrefix(originalURL.Path, systemARoutePrefix) {
+			req.URL = urlA
+		} else if strings.HasPrefix(originalURL.Path, systemBRoutePrefix) {
+			req.URL = urlB
 		} else {
 			return
 		}
 
-		req.Host = proxyURL.Host
-		req.URL.Scheme = proxyURL.Scheme
-		req.URL.Host = proxyURL.Host
-		req.URL.Path = mapPath(originalPath)
+		req.URL.Fragment = originalURL.Fragment
+		req.URL.RawQuery = originalURL.RawQuery
+
+		req.URL.Path = mapPath(originalURL.Path)
 	}
 
 	errResponse := struct{ Message string }{

@@ -58,7 +58,7 @@ func NewProxy(systemAURL, systemBURL string) (*httputil.ReverseProxy, error) {
 	}
 
 	errorHandler := func(w http.ResponseWriter, r *http.Request, err error) {
-		log.Printf("error proxying request from '%s' to '%s'", r.RequestURI, r.URL)
+		log.Printf("error proxying request from '%s' to '%s' because %v", r.RequestURI, r.URL, err)
 
 		w.WriteHeader(http.StatusInternalServerError)
 		_, err = w.Write(resJson)

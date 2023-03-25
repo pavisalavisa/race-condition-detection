@@ -1,0 +1,14 @@
+version: '3'
+services:
+  proxy:
+    build: .
+    ports:
+      - "8080:8080"
+  service-a:
+    build: ./upstreams/service-a
+    ports:
+      - "9202:9202"
+  service-b:
+    build: ./upstreams/service-b
+    ports:
+      - "9101:9101"

@@ -46,7 +46,6 @@ func NewProxy(systemAURL, systemBURL string) (*httputil.ReverseProxy, error) {
 
 		req.URL.Fragment = originalURL.Fragment
 		req.URL.RawQuery = originalURL.RawQuery
-
 		req.URL.Path = mapPath(originalURL.Path)
 	}
 

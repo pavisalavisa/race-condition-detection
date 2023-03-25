@@ -21,7 +21,7 @@ const (
 	systemBBaseURL = "https://system-b.com"
 )
 
-func TestProxy_V1(t *testing.T) {
+func TestProxy(t *testing.T) {
 	testCases := []struct {
 		desc             string
 		originalPath     string

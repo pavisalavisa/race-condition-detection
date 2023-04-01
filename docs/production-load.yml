@@ -1,0 +1,141 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: zsh
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/akristicevic/repos/race-condition-detection
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 32
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: race-condition-detection
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 357
+    content: "\e]1337;RemoteHost=akristicevic@Antonios-MBP\a\e]1337;CurrentDir=/Users/akristicevic/repos/race-condition-detection\a\e]1337;ShellIntegrationVersion=13;shell=zsh\a"
+  - delay: 16
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                                                       \r \r\e]2;akristicevic@Antonios-MBP:~/repos/race-condition-detection\a\e]1;..ion-detection\a\e]133;D;0\a\e]1337;RemoteHost=akristicevic@Antonios-MBP\a\e]1337;CurrentDir=/Users/akristicevic/repos/race-condition-detection\a"
+  - delay: 40
+    content: "\r\e[0m\e[27m\e[24m\e[J\e]133;A\a\e[01;32m➜  \e[36mrace-condition-detection\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e]133;B\a\e[K\e[?1h\e=\e[?2004h"
+  - delay: 716
+    content: k
+  - delay: 94
+    content: "\bk6"
+  - delay: 1103
+    content: " run --vus 10 --iterations 100 load-test.js\r\r\n\e[K\e[A\e[86C"
+  - delay: 492
+    content: "\e[1B\r\e[K\e[A\e[86C\e[?1l\e>\e[?2004l\e[1B\r\r\n\e]2;k6 run --vus 10 --iterations 100 load-test.js\a\e]1;k6\a\e]133;C;\r\a"
+  - delay: 69
+    content: "\e[0K\r\n\e[36m          /\\      |‾‾| /‾‾/   /‾‾/   \e[0K\r\n     /\\  /  \\     |  |/  /   /  /    \e[0K\r\n    /  \\/    \\    |     (   /   ‾‾\\  \e[0K\r\n   /          \\   |  |\\  \\ |  (‾)  | \e[0K\r\n  / __________ \\  |__| \\__\\ \\_____/ .io\e[0m\e[0K\r\n\e[0K\r\n"
+  - delay: 219
+    content: "  execution: \e[36mlocal\e[0m\e[0K\r\n     script: \e[36mload-test.js\e[0m\e[0K\r\n     output: \e[36mengine\e[0m\e[0K\r\n\e[0K\r\n  scenarios: \e[36m(100.00%) 1 scenario, 10 max VUs, 10m30s max duration (incl. graceful stop):\e[0m\e[0K\r\n           * default: 100 iterations shared among 10 VUs (maxDuration: 10m0s, gracefulStop: 30s)\e[0K\r\n\e[0K\r\n"
+  - delay: 41
+    content: "\e[0K\r\n\e[31m     ✗ status is 200\e[0K\r\n      ↳  51% — ✓ 51 / ✗ 49\e[0m\e[0K\r\n\e[31m     ✗ OK response\e[0K\r\n      ↳  51% — ✓ 51 / ✗ 49\e[0m\e[0K\r\n\e[0K\r\n     checks\e[2m.........................:\e[0m \e[36m51.00%\e[0m \e[36;2m✓ 102\e[0m         \e[36;2m✗ 98\e[0m\e[0K\r\n     data_received\e[2m..................:\e[0m \e[36m16 kB\e[0m  \e[36;2m432 kB/s\e[0m\e[0K\r\n     data_sent\e[2m......................:\e[0m \e[36m9.9 kB\e[0m \e[36;2m273 kB/s\e[0m\e[0K\r\n     http_req_blocked\e[2m...............:\e[0m avg=\e[36m144.02µs\e[0m min=\e[36m0s\e[0m       med=\e[36m1µs\e[0m    max=\e[36m1.78ms\e[0m  p(90)=\e[36m61.4µs\e[0m p(95)=\e[36m1.71ms\e[0m  \e[0K\r\n     http_req_connecting\e[2m............:\e[0m avg=\e[36m37.25µs\e[0m  min=\e[36m0s\e[0m       med=\e[36m0s\e[0m     max=\e[36m405µs\e[0m   p(90)=\e[36m33µs\e[0m   p(95)=\e[36m368.59µs\e[0m\e[0K\r\n     http_req_duration\e[2m..............:\e[0m avg=\e[36m3.24ms\e[0m   min=\e[36m679µs\e[0m    med=\e[36m1.49ms\e[0m max=\e[36m12.4ms\e[0m  p(90)=\e[36m7.94ms\e[0m p(95)=\e[36m11.43ms\e[0m \e[0K\r\n       { expected_response:true }\e[2m...:\e[0m avg=\e[36m3.12ms\e[0m   min=\e[36m707µs\e[0m    med=\e[36m1.58ms\e[0m max=\e[36m12.34ms\e[0m p(90)=\e[36m7.44ms\e[0m p(95)=\e[36m11.4ms\e[0m  \e[0K\r\n     http_req_failed\e[2m................:\e[0m \e[36m49.00%\e[0m \e[36;2m✓ 49\e[0m          \e[36;2m✗ 51\e[0m\e[0K\r\n     http_req_receiving\e[2m.............:\e[0m avg=\e[36m13.35µs\e[0m  min=\e[36m4µs\e[0m      med=\e[36m10µs\e[0m   max=\e[36m97µs\e[0m    p(90)=\e[36m19µs\e[0m   p(95)=\e[36m43.29µs\e[0m \e[0K\r\n     http_req_sending\e[2m...............:\e[0m avg=\e[36m6µs\e[0m      min=\e[36m1µs\e[0m      med=\e[36m3µs\e[0m    max=\e[36m69µs\e[0m    p(90)=\e[36m7.7µs\e[0m  p(95)=\e[36m27.19µs\e[0m \e[0K\r\n     http_req_tls_handshaking\e[2m.......:\e[0m avg=\e[36m0s\e[0m       min=\e[36m0s\e[0m       med=\e[36m0s\e[0m     max=\e[36m0s\e[0m      p(90)=\e[36m0s\e[0m     p(95)=\e[36m0s\e[0m      \e[0K\r\n     http_req_waiting\e[2m...............:\e[0m avg=\e[36m3.22ms\e[0m   min=\e[36m666µs\e[0m    med=\e[36m1.48ms\e[0m max=\e[36m12.37ms\e[0m p(90)=\e[36m7.92ms\e[0m p(95)=\e[36m11.39ms\e[0m \e[0K\r\n     http_reqs\e[2m......................:\e[0m \e[36m100\e[0m    \e[36;2m2764.340014/s\e[0m\e[0K\r\n     iteration_duration\e[2m.............:\e[0m avg=\e[36m3.48ms\e[0m   min=\e[36m705.54µs\e[0m med=\e[36m1.52ms\e[0m max=\e[36m14.89ms\e[0m p(90)=\e[36m8.06ms\e[0m p(95)=\e[36m14.14ms\e[0m \e[0K\r\n     iterations\e[2m.....................:\e[0m \e[36m100\e[0m    \e[36;2m2764.340014/s\e[0m\e[0K\r\n\e[0K\r\n\e[K\r\nrunning (00m00.0s), 00/10 VUs, 100 complete and 0 interrupted iterations\e[K\r\ndefault \e[32m✓\e[0m [======================================\e[2m\e[0m] 10 VUs  00m00.0s/10m0s  100/100 shared iters\e[K\r\n"
+  - delay: 437
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                                                       \r \r\e]2;akristicevic@Antonios-MBP:~/repos/race-condition-detection\a\e]1;..ion-detection\a\e]133;D;0\a"
+  - delay: 7
+    content: "\e]1337;RemoteHost=akristicevic@Antonios-MBP\a\e]1337;CurrentDir=/Users/akristicevic/repos/race-condition-detection\a"
+  - delay: 58
+    content: "\r\e[0m\e[27m\e[24m\e[J\e]133;A\a\e[01;32m➜  \e[36mrace-condition-detection\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e]133;B\a\e[K\e[?1h\e=\e[?2004h"
+  - delay: 1034
+    content: "\e[?2004l\r\r\n"

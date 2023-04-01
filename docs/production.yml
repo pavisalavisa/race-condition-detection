@@ -1,0 +1,285 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: zsh
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/akristicevic/repos/race-condition-detection
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 10
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: race-condition-detection
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 268
+    content: "\e]1337;RemoteHost=akristicevic@Antonios-MBP\a\e]1337;CurrentDir=/Users/akristicevic/repos/race-condition-detection\a\e]1337;ShellIntegrationVersion=13;shell=zsh\a"
+  - delay: 17
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                                                       \r \r\e]2;akristicevic@Antonios-MBP:~/repos/race-condition-detection\a\e]1;..ion-detection\a\e]133;D;0\a\e]1337;RemoteHost=akristicevic@Antonios-MBP\a\e]1337;CurrentDir=/Users/akristicevic/repos/race-condition-detection\a"
+  - delay: 40
+    content: "\r\e[0m\e[27m\e[24m\e[J\e]133;A\a\e[01;32m➜  \e[36mrace-condition-detection\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e]133;B\a\e[K\e[?1h\e=\e[?2004h"
+  - delay: 595
+    content: d
+  - delay: 84
+    content: "\bdo"
+  - delay: 125
+    content: c
+  - delay: 100
+    content: k
+  - delay: 83
+    content: e
+  - delay: 82
+    content: r
+  - delay: 226
+    content: '-'
+  - delay: 143
+    content: c
+  - delay: 89
+    content: o
+  - delay: 145
+    content: m
+  - delay: 153
+    content: p
+  - delay: 184
+    content: o
+  - delay: 54
+    content: s
+  - delay: 162
+    content: e
+  - delay: 114
+    content: ' '
+  - delay: 190
+    content: u
+  - delay: 224
+    content: p
+  - delay: 206
+    content: ' '
+  - delay: 150
+    content: '-'
+  - delay: 139
+    content: '-'
+  - delay: 79
+    content: b
+  - delay: 147
+    content: u
+  - delay: 106
+    content: i
+  - delay: 229
+    content: l
+  - delay: 96
+    content: d
+  - delay: 393
+    content: ' '
+  - delay: 198
+    content: '-'
+  - delay: 113
+    content: d
+  - delay: 260
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;docker-compose up --build -d\a\e]1;docker-compose\a\e]133;C;\r\a"
+  - delay: 471
+    content: "\e[1A\e[1B\e[0G\e[?25l[+] Building 0.0s (0/0)                                                                                                 \r\n\e[?25h"
+  - delay: 151
+    content: "\e[1A\e[0G\e[?25l[+] Building 0.0s (0/0)                                                                                                 \r\n\e[?25h"
+  - delay: 150
+    content: "\e[1A\e[0G\e[?25l[+] Building 0.0s (0/0)                                                                                                 \r\n\e[?25h"
+  - delay: 137
+    content: "\e[1A\e[0G\e[?25l[+] Building 0.0s (0/1)                                                                                                 \r\n\e[?25h"
+  - delay: 100
+    content: "\e[1A\e[0G\e[?25l[+] Building 0.1s (3/4)                                                                                                 \r\n\e[34m => [race-condition-detection-service-b internal] load build definition from Dockerfile                            0.0s\r\n\e[0m\e[34m => => transferring dockerfile: 32B                                                                                0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy internal] load build definition from Dockerfile                                0.0s\r\n\e[0m\e[34m => => transferring dockerfile: 32B                                                                                0.0s\r\n\e[0m\e[34m => [race-condition-detection-service-a internal] load build definition from Dockerfile                            0.0s\r\n\e[0m\e[34m => => transferring dockerfile: 32B                                                                                0.0s\r\n\e[0m\e[?25h"
+  - delay: 102
+    content: "\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Building 0.2s (6/7)                                                                                                 \r\n\e[34m => => transferring dockerfile: 32B                                                                                0.0s\r\n\e[0m\e[34m => [race-condition-detection-service-b internal] load .dockerignore                                               0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy internal] load .dockerignore                                                   0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-service-a internal] load .dockerignore                                               0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m => [race-condition-detection-service-b internal] load metadata for docker.io/library/golang:1.16-alpine           0.0s\r\n\e[?25h"
+  - delay: 150
+    content: "\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Building 0.4s (6/7)                                                                                                 \r\n\e[34m => => transferring dockerfile: 32B                                                                                0.0s\r\n\e[0m\e[34m => [race-condition-detection-service-b internal] load .dockerignore                                               0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy internal] load .dockerignore                                                   0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-service-a internal] load .dockerignore                                               0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m => [race-condition-detection-proxy internal] load metadata for docker.io/library/golang:1.16-alpine               0.2s\r\n\e[?25h"
+  - delay: 150
+    content: "\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Building 0.5s (6/7)                                                                                                 \r\n\e[34m => => transferring dockerfile: 32B                                                                                0.0s\r\n\e[0m\e[34m => [race-condition-detection-service-b internal] load .dockerignore                                               0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy internal] load .dockerignore                                                   0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-service-a internal] load .dockerignore                                               0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m => [race-condition-detection-proxy internal] load metadata for docker.io/library/golang:1.16-alpine               0.3s\r\n\e[?25h"
+  - delay: 152
+    content: "\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Building 0.7s (6/7)                                                                                                 \r\n\e[34m => => transferring dockerfile: 32B                                                                                0.0s\r\n\e[0m\e[34m => [race-condition-detection-service-b internal] load .dockerignore                                               0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy internal] load .dockerignore                                                   0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-service-a internal] load .dockerignore                                               0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m => [race-condition-detection-proxy internal] load metadata for docker.io/library/golang:1.16-alpine               0.5s\r\n\e[?25h"
+  - delay: 151
+    content: "\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Building 0.8s (6/7)                                                                                                 \r\n\e[34m => => transferring dockerfile: 32B                                                                                0.0s\r\n\e[0m\e[34m => [race-condition-detection-service-b internal] load .dockerignore                                               0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy internal] load .dockerignore                                                   0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-service-a internal] load .dockerignore                                               0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m => [race-condition-detection-proxy internal] load metadata for docker.io/library/golang:1.16-alpine               0.6s\r\n\e[?25h"
+  - delay: 150
+    content: "\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Building 1.0s (6/7)                                                                                                 \r\n\e[34m => => transferring dockerfile: 32B                                                                                0.0s\r\n\e[0m\e[34m => [race-condition-detection-service-b internal] load .dockerignore                                               0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy internal] load .dockerignore                                                   0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-service-a internal] load .dockerignore                                               0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m => [race-condition-detection-proxy internal] load metadata for docker.io/library/golang:1.16-alpine               0.8s\r\n\e[?25h"
+  - delay: 151
+    content: "\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Building 1.1s (6/7)                                                                                                 \r\n\e[34m => => transferring dockerfile: 32B                                                                                0.0s\r\n\e[0m\e[34m => [race-condition-detection-service-b internal] load .dockerignore                                               0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy internal] load .dockerignore                                                   0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-service-a internal] load .dockerignore                                               0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m => [race-condition-detection-proxy internal] load metadata for docker.io/library/golang:1.16-alpine               0.9s\r\n\e[?25h"
+  - delay: 151
+    content: "\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Building 1.3s (6/7)                                                                                                 \r\n\e[34m => => transferring dockerfile: 32B                                                                                0.0s\r\n\e[0m\e[34m => [race-condition-detection-service-b internal] load .dockerignore                                               0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy internal] load .dockerignore                                                   0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-service-a internal] load .dockerignore                                               0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m => [race-condition-detection-proxy internal] load metadata for docker.io/library/golang:1.16-alpine               1.1s\r\n\e[?25h"
+  - delay: 101
+    content: "\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Building 1.4s (16/19)                                                                                               \r\n => [race-condition-detection-service-a] exporting to image                                                        0.0s\r\n\e[34m => => exporting layers                                                                                            0.0s\r\n\e[0m\e[34m => => writing image sha256:d7a4d9ab28d374761081daf705c62db454e4de5bed28f218e98fd1d69c0cde80                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-a                                              0.0s\r\n\e[0m => => writing image sha256:9e118336dfcd83f205d65c45443edc071630548bd9e689eba9166b3b11a2f51a                       0.0s\r\n\e[34m => CACHED [race-condition-detection-service-b 3/4] COPY . .                                                       0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 4/4] RUN go build -o app main.go                                    0.0s\r\n\e[0m => [race-condition-detection-proxy 3/4] COPY . .                                                                  0.1s\r\n\e[?25h"
+  - delay: 151
+    content: "\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Building 1.5s (18/19)                                                                                               \r\n\e[34m => => writing image sha256:d7a4d9ab28d374761081daf705c62db454e4de5bed28f218e98fd1d69c0cde80                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-a                                              0.0s\r\n\e[0m\e[34m => => writing image sha256:9e118336dfcd83f205d65c45443edc071630548bd9e689eba9166b3b11a2f51a                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-b                                              0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 3/4] COPY . .                                                       0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 4/4] RUN go build -o app main.go                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy 3/4] COPY . .                                                                  0.0s\r\n\e[0m => [race-condition-detection-proxy 4/4] RUN go build -o app                                                       0.2s\r\n\e[?25h"
+  - delay: 150
+    content: "\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Building 1.7s (18/19)                                                                                               \r\n\e[34m => => writing image sha256:d7a4d9ab28d374761081daf705c62db454e4de5bed28f218e98fd1d69c0cde80                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-a                                              0.0s\r\n\e[0m\e[34m => => writing image sha256:9e118336dfcd83f205d65c45443edc071630548bd9e689eba9166b3b11a2f51a                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-b                                              0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 3/4] COPY . .                                                       0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 4/4] RUN go build -o app main.go                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy 3/4] COPY . .                                                                  0.0s\r\n\e[0m => [race-condition-detection-proxy 4/4] RUN go build -o app                                                       0.3s\r\n\e[?25h"
+  - delay: 151
+    content: "\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Building 1.8s (18/19)                                                                                               \r\n\e[34m => => writing image sha256:d7a4d9ab28d374761081daf705c62db454e4de5bed28f218e98fd1d69c0cde80                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-a                                              0.0s\r\n\e[0m\e[34m => => writing image sha256:9e118336dfcd83f205d65c45443edc071630548bd9e689eba9166b3b11a2f51a                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-b                                              0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 3/4] COPY . .                                                       0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 4/4] RUN go build -o app main.go                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy 3/4] COPY . .                                                                  0.0s\r\n\e[0m => [race-condition-detection-proxy 4/4] RUN go build -o app                                                       0.5s\r\n\e[?25h"
+  - delay: 151
+    content: "\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Building 2.0s (18/19)                                                                                               \r\n\e[34m => => writing image sha256:d7a4d9ab28d374761081daf705c62db454e4de5bed28f218e98fd1d69c0cde80                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-a                                              0.0s\r\n\e[0m\e[34m => => writing image sha256:9e118336dfcd83f205d65c45443edc071630548bd9e689eba9166b3b11a2f51a                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-b                                              0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 3/4] COPY . .                                                       0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 4/4] RUN go build -o app main.go                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy 3/4] COPY . .                                                                  0.0s\r\n\e[0m => [race-condition-detection-proxy 4/4] RUN go build -o app                                                       0.6s\r\n\e[?25h"
+  - delay: 151
+    content: "\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Building 2.1s (18/19)                                                                                               \r\n\e[34m => => writing image sha256:d7a4d9ab28d374761081daf705c62db454e4de5bed28f218e98fd1d69c0cde80                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-a                                              0.0s\r\n\e[0m\e[34m => => writing image sha256:9e118336dfcd83f205d65c45443edc071630548bd9e689eba9166b3b11a2f51a                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-b                                              0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 3/4] COPY . .                                                       0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 4/4] RUN go build -o app main.go                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy 3/4] COPY . .                                                                  0.0s\r\n\e[0m => [race-condition-detection-proxy 4/4] RUN go build -o app                                                       0.8s\r\n\e[?25h"
+  - delay: 151
+    content: "\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Building 2.3s (18/19)                                                                                               \r\n\e[34m => => writing image sha256:d7a4d9ab28d374761081daf705c62db454e4de5bed28f218e98fd1d69c0cde80                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-a                                              0.0s\r\n\e[0m\e[34m => => writing image sha256:9e118336dfcd83f205d65c45443edc071630548bd9e689eba9166b3b11a2f51a                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-b                                              0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 3/4] COPY . .                                                       0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 4/4] RUN go build -o app main.go                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy 3/4] COPY . .                                                                  0.0s\r\n\e[0m => [race-condition-detection-proxy 4/4] RUN go build -o app                                                       0.9s\r\n\e[?25h"
+  - delay: 150
+    content: "\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Building 2.4s (18/19)                                                                                               \r\n\e[34m => => writing image sha256:d7a4d9ab28d374761081daf705c62db454e4de5bed28f218e98fd1d69c0cde80                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-a                                              0.0s\r\n\e[0m\e[34m => => writing image sha256:9e118336dfcd83f205d65c45443edc071630548bd9e689eba9166b3b11a2f51a                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-b                                              0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 3/4] COPY . .                                                       0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 4/4] RUN go build -o app main.go                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy 3/4] COPY . .                                                                  0.0s\r\n\e[0m => [race-condition-detection-proxy 4/4] RUN go build -o app                                                       1.1s\r\n\e[?25h"
+  - delay: 153
+    content: "\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Building 2.6s (18/19)                                                                                               \r\n\e[34m => => writing image sha256:d7a4d9ab28d374761081daf705c62db454e4de5bed28f218e98fd1d69c0cde80                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-a                                              0.0s\r\n\e[0m\e[34m => => writing image sha256:9e118336dfcd83f205d65c45443edc071630548bd9e689eba9166b3b11a2f51a                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-b                                              0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 3/4] COPY . .                                                       0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 4/4] RUN go build -o app main.go                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy 3/4] COPY . .                                                                  0.0s\r\n\e[0m => [race-condition-detection-proxy 4/4] RUN go build -o app                                                       1.2s\r\n\e[?25h"
+  - delay: 149
+    content: "\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Building 2.7s (18/19)                                                                                               \r\n\e[34m => => writing image sha256:d7a4d9ab28d374761081daf705c62db454e4de5bed28f218e98fd1d69c0cde80                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-a                                              0.0s\r\n\e[0m\e[34m => => writing image sha256:9e118336dfcd83f205d65c45443edc071630548bd9e689eba9166b3b11a2f51a                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-b                                              0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 3/4] COPY . .                                                       0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 4/4] RUN go build -o app main.go                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy 3/4] COPY . .                                                                  0.0s\r\n\e[0m => [race-condition-detection-proxy 4/4] RUN go build -o app                                                       1.4s\r\n\e[?25h"
+  - delay: 150
+    content: "\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Building 2.9s (18/19)                                                                                               \r\n\e[34m => => writing image sha256:d7a4d9ab28d374761081daf705c62db454e4de5bed28f218e98fd1d69c0cde80                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-a                                              0.0s\r\n\e[0m\e[34m => => writing image sha256:9e118336dfcd83f205d65c45443edc071630548bd9e689eba9166b3b11a2f51a                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-b                                              0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 3/4] COPY . .                                                       0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 4/4] RUN go build -o app main.go                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy 3/4] COPY . .                                                                  0.0s\r\n\e[0m => [race-condition-detection-proxy 4/4] RUN go build -o app                                                       1.5s\r\n\e[?25h"
+  - delay: 119
+    content: "\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Building 3.0s (18/19)                                                                                               \r\n => [race-condition-detection-proxy] exporting to image                                                            0.1s\r\n\e[34m => => naming to docker.io/library/race-condition-detection-service-a                                              0.0s\r\n\e[0m\e[34m => => writing image sha256:9e118336dfcd83f205d65c45443edc071630548bd9e689eba9166b3b11a2f51a                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-b                                              0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 3/4] COPY . .                                                       0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 4/4] RUN go build -o app main.go                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy 3/4] COPY . .                                                                  0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy 4/4] RUN go build -o app                                                       1.6s\r\n\e[0m\e[?25h"
+  - delay: 7
+    content: "\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Building 3.0s (19/19) FINISHED                                                                                      \r\n\e[34m => [race-condition-detection-service-b internal] load build definition from Dockerfile                            0.0s\r\n\e[0m\e[34m => => transferring dockerfile: 32B                                                                                0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy internal] load build definition from Dockerfile                                0.0s\r\n\e[0m\e[34m => => transferring dockerfile: 32B                                                                                0.0s\r\n\e[0m\e[34m => [race-condition-detection-service-a internal] load build definition from Dockerfile                            0.0s\r\n\e[0m\e[34m => => transferring dockerfile: 32B                                                                                0.0s\r\n\e[0m\e[34m => [race-condition-detection-service-b internal] load .dockerignore                                               0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy internal] load .dockerignore                                                   0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-service-a internal] load .dockerignore                                               0.0s\r\n\e[0m\e[34m => => transferring context: 2B                                                                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-service-a internal] load metadata for docker.io/library/golang:1.16-alpine           1.1s\r\n\e[0m\e[34m => [race-condition-detection-proxy 1/4] FROM docker.io/library/golang:1.16-alpine@sha256:5616dca835fa90ef13a8438  0.0s\r\n\e[0m\e[34m => [race-condition-detection-service-a internal] load build context                                               0.0s\r\n\e[0m\e[34m => => transferring context: 85B                                                                                   0.0s\r\n\e[0m\e[34m => [race-condition-detection-service-b internal] load build context                                               0.0s\r\n\e[0m\e[34m => => transferring context: 59B                                                                                   0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy internal] load build context                                                   0.0s\r\n\e[0m\e[34m => => transferring context: 8.82kB                                                                                0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-a 2/4] WORKDIR /app                                                   0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-a 3/4] COPY . .                                                       0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-a 4/4] RUN go build -o app main.go                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy] exporting to image                                                            0.1s\r\n\e[0m\e[34m => => exporting layers                                                                                            0.0s\r\n\e[0m\e[34m => => writing image sha256:d7a4d9ab28d374761081daf705c62db454e4de5bed28f218e98fd1d69c0cde80                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-a                                              0.0s\r\n\e[0m\e[34m => => writing image sha256:9e118336dfcd83f205d65c45443edc071630548bd9e689eba9166b3b11a2f51a                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-service-b                                              0.0s\r\n\e[0m\e[34m => => writing image sha256:f50948764891f4a96dfaffb5f91637de87416384331b520e971daa1b71c0f253                       0.0s\r\n\e[0m\e[34m => => naming to docker.io/library/race-condition-detection-proxy                                                  0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 3/4] COPY . .                                                       0.0s\r\n\e[0m\e[34m => CACHED [race-condition-detection-service-b 4/4] RUN go build -o app main.go                                    0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy 3/4] COPY . .                                                                  0.0s\r\n\e[0m\e[34m => [race-condition-detection-proxy 4/4] RUN go build -o app                                                       1.6s\r\n\e[0m\e[?25h"
+  - delay: 321
+    content: "\r\nUse 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them\r\n"
+  - delay: 50
+    content: "\e[1A\e[1B\e[0G\e[?25l[+] Running 2/0\r\n\e[34m ⠿ Container race-condition-detection-service-b-1  Running                                                         0.0s\r\n\e[0m\e[34m ⠿ Container race-condition-detection-service-a-1  Running                                                         0.0s\r\n\e[0m\e[37m ⠋ Container race-condition-detection-proxy-1      Recreate                                                        0.0s\r\n\e[0m\e[?25h"
+  - delay: 99
+    content: "\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Running 2/3\r\n\e[34m ⠿ Container race-condition-detection-service-b-1  Running                                                         0.0s\r\n\e[0m\e[34m ⠿ Container race-condition-detection-service-a-1  Running                                                         0.0s\r\n\e[0m\e[37m ⠙ Container race-condition-detection-proxy-1      Recreate                                                        0.1s\r\n\e[0m\e[?25h"
+  - delay: 101
+    content: "\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Running 2/3\r\n\e[34m ⠿ Container race-condition-detection-service-b-1  Running                                                         0.0s\r\n\e[0m\e[34m ⠿ Container race-condition-detection-service-a-1  Running                                                         0.0s\r\n\e[0m\e[37m ⠿ Container race-condition-detection-proxy-1      Starting                                                        0.2s\r\n\e[0m\e[?25h"
+  - delay: 100
+    content: "\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l[+] Running 2/3\r\n\e[34m ⠿ Container race-condition-detection-service-b-1  Running                                                         0.0s\r\n\e[0m\e[34m ⠿ Container race-condition-detection-service-a-1  Running                                                         0.0s\r\n\e[0m\e[37m ⠿ Container race-condition-detection-proxy-1      Starting                                                        0.3s\r\n\e[0m\e[?25h"
+  - delay: 56
+    content: "\e[1A\e[1A\e[1A\e[1A\e[0G\e[?25l\e[34m[+] Running 3/3\e[0m\r\n\e[34m ⠿ Container race-condition-detection-service-b-1  Running                                                         0.0s\r\n\e[0m\e[34m ⠿ Container race-condition-detection-service-a-1  Running                                                         0.0s\r\n\e[0m\e[34m ⠿ Container race-condition-detection-proxy-1      Started                                                         0.4s\r\n\e[0m\e[?25h"
+  - delay: 6
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                                                       \r \r\e]2;akristicevic@Antonios-MBP:~/repos/race-condition-detection\a\e]1;..ion-detection\a\e]133;D;0\a\e]1337;RemoteHost=akristicevic@Antonios-MBP\a\e]1337;CurrentDir=/Users/akristicevic/repos/race-condition-detection\a"
+  - delay: 46
+    content: "\r\e[0m\e[27m\e[24m\e[J\e]133;A\a\e[01;32m➜  \e[36mrace-condition-detection\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e]133;B\a\e[K\e[?1h\e=\e[?2004h"
+  - delay: 1738
+    content: c
+  - delay: 87
+    content: "\bcu"
+  - delay: 218
+    content: r
+  - delay: 142
+    content: l
+  - delay: 565
+    content: ' -X POST localhost:8080/a/foo/bar'
+  - delay: 1735
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;curl -X POST localhost:8080/a/foo/bar\a\e]1;curl\a\e]133;C;\r\a"
+  - delay: 37
+    content: "Hello from service A\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                                                       \r \r\e]2;akristicevic@Antonios-MBP:~/repos/race-condition-detection\a\e]1;..ion-detection\a\e]133;D;0\a"
+  - delay: 5
+    content: "\e]1337;RemoteHost=akristicevic@Antonios-MBP\a\e]1337;CurrentDir=/Users/akristicevic/repos/race-condition-detection\a"
+  - delay: 46
+    content: "\r\e[0m\e[27m\e[24m\e[J\e]133;A\a\e[01;32m➜  \e[36mrace-condition-detection\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e]133;B\a\e[K\e[?1h\e=\e[?2004h"
+  - delay: 1097
+    content: c
+  - delay: 128
+    content: "\bcu"
+  - delay: 133
+    content: r
+  - delay: 130
+    content: l
+  - delay: 644
+    content: ' -X POST localhost:8080/a/foo/bar'
+  - delay: 566
+    content: "\e[32D\e[8P\e[15Cb/baz            \e[12D"
+  - delay: 846
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;curl localhost:8080/b/baz\a\e]1;curl\a\e]133;C;\r\a"
+  - delay: 30
+    content: "Hello from service B\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                                                       \r \r\e]2;akristicevic@Antonios-MBP:~/repos/race-condition-detection\a\e]1;..ion-detection\a\e]133;D;0\a"
+  - delay: 5
+    content: "\e]1337;RemoteHost=akristicevic@Antonios-MBP\a\e]1337;CurrentDir=/Users/akristicevic/repos/race-condition-detection\a"
+  - delay: 55
+    content: "\r\e[0m\e[27m\e[24m\e[J\e]133;A\a\e[01;32m➜  \e[36mrace-condition-detection\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e]133;B\a\e[K\e[?1h\e=\e[?2004h"
+  - delay: 1366
+    content: "\e[?2004l\r\r\n"

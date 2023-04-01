@@ -1,0 +1,155 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: zsh
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/akristicevic/repos/race-condition-detection
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 32
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: race-condition-detection
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 515
+    content: "\e]1337;RemoteHost=akristicevic@Antonios-MBP\a\e]1337;CurrentDir=/Users/akristicevic/repos/race-condition-detection\a\e]1337;ShellIntegrationVersion=13;shell=zsh\a"
+  - delay: 15
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                                                       \r \r\e]2;akristicevic@Antonios-MBP:~/repos/race-condition-detection\a\e]1;..ion-detection\a\e]133;D;0\a\e]1337;RemoteHost=akristicevic@Antonios-MBP\a\e]1337;CurrentDir=/Users/akristicevic/repos/race-condition-detection\a"
+  - delay: 40
+    content: "\r\e[0m\e[27m\e[24m\e[J\e]133;A\a\e[01;32m➜  \e[36mrace-condition-detection\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e]133;B\a\e[K\e[?1h\e=\e[?2004h"
+  - delay: 390
+    content: g
+  - delay: 94
+    content: "\bgo"
+  - delay: 170
+    content: ' '
+  - delay: 121
+    content: t
+  - delay: 60
+    content: e
+  - delay: 157
+    content: s
+  - delay: 102
+    content: t
+  - delay: 63
+    content: ' '
+  - delay: 213
+    content: '-'
+  - delay: 212
+    content: r
+  - delay: 91
+    content: a
+  - delay: 187
+    content: c
+  - delay: 35
+    content: e
+  - delay: 774
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;go test -race\a\e]1;go\a\e]133;C;\r\a"
+  - delay: 6403
+    content: "2023/03/27 21:58:53 error proxying request from 'https://api.com/any/v1/whtvr' to 'https://system-a.com/any/v1/whtvr' because Test round trip error\r\n==================\r\nWARNING: DATA RACE\r\nWrite at 0x00c000142c40 by goroutine 12:\r\n  github.com/pavisalavisa/race-condition-detection.NewProxy.func1()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy.go:47 +0x174\r\n  github.com/pavisalavisa/race-condition-detection.fixtureProxy.func1()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy_test.go:111 +0x50\r\n  net/http/httputil.(*ReverseProxy).ServeHTTP()\r\n      /opt/homebrew/Cellar/go/1.20.2/libexec/src/net/http/httputil/reverseproxy.go:387 +0x3e4\r\n  github.com/pavisalavisa/race-condition-detection.TestProxy_ConcurrentRequests.func2()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy_test.go:97 +0x12c\r\n\r\nPrevious write at 0x00c000142c40 by goroutine 14:\r\n  github.com/pavisalavisa/race-condition-detection.NewProxy.func1()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy.go:47 +0x174\r\n  github.com/pavisalavisa/race-condition-detection.fixtureProxy.func1()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy_test.go:111 +0x50\r\n  net/http/httputil.(*ReverseProxy).ServeHTTP()\r\n      /opt/homebrew/Cellar/go/1.20.2/libexec/src/net/http/httputil/reverseproxy.go:387 +0x3e4\r\n  github.com/pavisalavisa/race-condition-detection.TestProxy_ConcurrentRequests.func2()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy_test.go:97 +0x12c\r\n\r\nGoroutine 12 (running) created at:\r\n  github.com/pavisalavisa/race-condition-detection.TestProxy_ConcurrentRequests()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy_test.go:92 +0x64\r\n  testing.tRunner()\r\n      /opt/homebrew/Cellar/go/1.20.2/libexec/src/testing/testing.go:1576 +0x180\r\n  testing.(*T).Run.func1()\r\n      /opt/homebrew/Cellar/go/1.20.2/libexec/src/testing/testing.go:1629 +0x40\r\n\r\nGoroutine 14 (finished) created at:\r\n  github.com/pavisalavisa/race-condition-detection.TestProxy_ConcurrentRequests()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy_test.go:92 +0x64\r\n  testing.tRunner()\r\n      /opt/homebrew/Cellar/go/1.20.2/libexec/src/testing/testing.go:1576 +0x180\r\n  testing.(*T).Run.func1()\r\n      /opt/homebrew/Cellar/go/1.20.2/libexec/src/testing/testing.go:1629 +0x40\r\n==================\r\n==================\r\nWARNING: DATA RACE\r\nWrite at 0x00c000142c30 by goroutine 18:\r\n  github.com/pavisalavisa/race-condition-detection.NewProxy.func1()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy.go:48 +0x1e8\r\n  github.com/pavisalavisa/race-condition-detection.fixtureProxy.func1()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy_test.go:111 +0x50\r\n  net/http/httputil.(*ReverseProxy).ServeHTTP()\r\n      /opt/homebrew/Cellar/go/1.20.2/libexec/src/net/http/httputil/reverseproxy.go:387 +0x3e4\r\n  github.com/pavisalavisa/race-condition-detection.TestProxy_ConcurrentRequests.func2()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy_test.go:97 +0x12c\r\n\r\nPrevious write at 0x00c000142c30 by goroutine 14:\r\n  github.com/pavisalavisa/race-condition-detection.NewProxy.func1()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy.go:48 +0x1e8\r\n  github.com/pavisalavisa/race-condition-detection.fixtureProxy.func1()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy_test.go:111 +0x50\r\n  net/http/httputil.(*ReverseProxy).ServeHTTP()\r\n      /opt/homebrew/Cellar/go/1.20.2/libexec/src/net/http/httputil/reverseproxy.go:387 +0x3e4\r\n  github.com/pavisalavisa/race-condition-detection.TestProxy_ConcurrentRequests.func2()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy_test.go:97 +0x12c\r\n\r\nGoroutine 18 (running) created at:\r\n  github.com/pavisalavisa/race-condition-detection.TestProxy_ConcurrentRequests()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy_test.go:92 +0x64\r\n  testing.tRunner()\r\n      /opt/homebrew/Cellar/go/1.20.2/libexec/src/testing/testing.go:1576 +0x180\r\n  testing.(*T).Run.func1()\r\n      /opt/homebrew/Cellar/go/1.20.2/libexec/src/testing/testing.go:1629 +0x40\r\n\r\nGoroutine 14 (finished) created at:\r\n  github.com/pavisalavisa/race-condition-detection.TestProxy_ConcurrentRequests()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy_test.go:92 +0x64\r\n  testing.tRunner()\r\n      /opt/homebrew/Cellar/go/1.20.2/libexec/src/testing/testing.go:1576 +0x180\r\n  testing.(*T).Run.func1()\r\n      /opt/homebrew/Cellar/go/1.20.2/libexec/src/testing/testing.go:1629 +0x40\r\n==================\r\n==================\r\nWARNING: DATA RACE\r\nWrite at 0x00c000142c08 by goroutine 38:\r\n  github.com/pavisalavisa/race-condition-detection.NewProxy.func1()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy.go:49 +0x25c\r\n  github.com/pavisalavisa/race-condition-detection.fixtureProxy.func1()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy_test.go:111 +0x50\r\n  net/http/httputil.(*ReverseProxy).ServeHTTP()\r\n      /opt/homebrew/Cellar/go/1.20.2/libexec/src/net/http/httputil/reverseproxy.go:387 +0x3e4\r\n  github.com/pavisalavisa/race-condition-detection.TestProxy_ConcurrentRequests.func2()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy_test.go:97 +0x12c\r\n\r\nPrevious write at 0x00c000142c08 by goroutine 14:\r\n  github.com/pavisalavisa/race-condition-detection.NewProxy.func1()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy.go:49 +0x25c\r\n  github.com/pavisalavisa/race-condition-detection.fixtureProxy.func1()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy_test.go:111 +0x50\r\n  net/http/httputil.(*ReverseProxy).ServeHTTP()\r\n      /opt/homebrew/Cellar/go/1.20.2/libexec/src/net/http/httputil/reverseproxy.go:387 +0x3e4\r\n  github.com/pavisalavisa/race-condition-detection.TestProxy_ConcurrentRequests.func2()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy_test.go:97 +0x12c\r\n\r\nGoroutine 38 (running) created at:\r\n  github.com/pavisalavisa/race-condition-detection.TestProxy_ConcurrentRequests()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy_test.go:92 +0x64\r\n  testing.tRunner()\r\n      /opt/homebrew/Cellar/go/1.20.2/libexec/src/testing/testing.go:1576 +0x180\r\n  testing.(*T).Run.func1()\r\n      /opt/homebrew/Cellar/go/1.20.2/libexec/src/testing/testing.go:1629 +0x40\r\n\r\nGoroutine 14 (finished) created at:\r\n  github.com/pavisalavisa/race-condition-detection.TestProxy_ConcurrentRequests()\r\n      /Users/akristicevic/repos/race-condition-detection/proxy_test.go:92 +0x64\r\n  testing.tRunner()\r\n      /opt/homebrew/Cellar/go/1.20.2/libexec/src/testing/testing.go:1576 +0x180\r\n  testing.(*T).Run.func1()\r\n      /opt/homebrew/Cellar/go/1.20.2/libexec/src/testing/testing.go:1629 +0x40\r\n==================\r\n--- FAIL: TestProxy_ConcurrentRequests (0.01s)\r\n    testing.go:1446: race detected during execution of test\r\nFAIL\r\nexit status 1\r\nFAIL\tgithub.com/pavisalavisa/race-condition-detection\t0.352s\r\n"
+  - delay: 50
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                                                       \r \r\e]2;akristicevic@Antonios-MBP:~/repos/race-condition-detection\a\e]1;..ion-detection\a\e]133;D;1\a\e]1337;RemoteHost=akristicevic@Antonios-MBP\a\e]1337;CurrentDir=/Users/akristicevic/repos/race-condition-detection\a"
+  - delay: 43
+    content: "\r\e[0m\e[27m\e[24m\e[J\e]133;A\a\e[01;31m➜  \e[36mrace-condition-detection\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e]133;B\a\e[K\e[?1h\e=\e[?2004h"
+  - delay: 3638
+    content: "\e[?2004l\r\r\n"

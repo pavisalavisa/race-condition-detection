@@ -35,15 +35,17 @@ func NewProxy(systemAURL, systemBURL string) (*httputil.ReverseProxy, error) {
 
 	director := func(req *http.Request) {
 		originalURL := req.URL
+		var proxyURL url.URL
 
 		if strings.HasPrefix(originalURL.Path, systemARoutePrefix) {
-			req.URL = urlA
+			proxyURL = *urlA
 		} else if strings.HasPrefix(originalURL.Path, systemBRoutePrefix) {
-			req.URL = urlB
+			proxyURL = *urlB
 		} else {
 			return
 		}
 
+		req.URL = &proxyURL
 		req.URL.Fragment = originalURL.Fragment
 		req.URL.RawQuery = originalURL.RawQuery
 		req.URL.Path = mapPath(originalURL.Path)
